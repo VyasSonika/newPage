@@ -11,7 +11,7 @@
 		outline: 1px solid #005290;
 	}
 </style>
-<script src="script.js"></script>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -54,6 +54,7 @@
 	};
 
 	if (!window.embedded_svc) {
+		<script src="script.js"></script>
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://playful-unicorn-ew2pat-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
