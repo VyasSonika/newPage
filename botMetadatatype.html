@@ -63,20 +63,20 @@
                     "Chat & Co-Browse with an Expert";
 
                 embedded_svc.init(
-                    'https://lwta--pm.sandbox.my.salesforce.com/',
-		    'https://lwta--pm.sandbox.my.site.com/HelpCenter',
-                    gslbBaseURL,
-                    '00D7d0000077mM7',
-                    'Bot_Chatbots_Group',
-                    {
-                        baseLiveAgentContentURL: 'https://c.la3-c1cs-ia5.salesforceliveagent.com/content',
-						deploymentId: '5723l000000CmZ3',
-						buttonId: '5731N000000TawEQAS',
-						baseLiveAgentURL: 'https://d.la3-c1cs-ia5.salesforceliveagent.com/chat',
-						eswLiveAgentDevName: 'Bot_Chatbots_Group',
-						isOfflineSupportEnabled: true
-                    }
-                );
+			'https://lwta--pm.sandbox.my.salesforce.com',
+			'https://lwta--pm.sandbox.my.site.com/HelpCenter',
+			gslbBaseURL,
+			'00D8K0000000Syy',
+			'Bot_Chatbots_Group',
+			{
+				baseLiveAgentContentURL: 'https://c.la4-c1cs-ia5.salesforceliveagent.com/content',
+				deploymentId: '5723l000000CmZ3',
+				buttonId: '5731N000000TawEQAS',
+				baseLiveAgentURL: 'https://d.la4-c1cs-ia5.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'Bot_Chatbots_Group',
+				isOfflineSupportEnabled: true
+			}
+		);
 	    	embedded_svc.addEventHandler("onChatReconnectSuccessful", function() {
 		    console.log("onChatReconnectSuccessful event was fired.  liveAgentSessionKey was ");
 		});
