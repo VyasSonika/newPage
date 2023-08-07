@@ -64,7 +64,7 @@
 
                 embedded_svc.init(
 			'https://lwta--pm.sandbox.my.salesforce.com',
-			'https://lwta--pm.sandbox.my.site.com/HelpCenter',
+			'https://lwta--pm.sandbox.my.site.com/LWTACustomerService',
 			gslbBaseURL,
 			'00D8K0000000Syy',
 			'Bot_Chatbots_Group',
@@ -110,15 +110,15 @@
             };
 
             if (!window.embedded_svc) {
-                var s = document.createElement('script');
-                s.setAttribute('src', 'https://lwta--pm.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-                s.onload = function () {
-                    initESW(null);
-                };
-                document.body.appendChild(s);
-            } else {
-                initESW('https://service.force.com');
-            }
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://lwta--pm.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
         </script>
 
 
